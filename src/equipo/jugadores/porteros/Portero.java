@@ -20,19 +20,24 @@ public class Portero extends Jugador{
 	}
 	
 	@Override
-	public String toString() {
-		return "";
+	public void mostrarDatos() {
+	System.out.println(this.toString());
 	}
-	
+		
+	@Override
+	public String toString() {
+		return "Portero"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Paradas: "+ getParadas()+ "}";
+	}
 	@Override 
 	public boolean equals(Object obj) {
-		Portero port = (Portero) obj;
+		Portero jug = (Portero) obj;
 		boolean resultado = false;
-		if(port.getId_Jug() == this.getId_Jug()){
+		if(jug.getId_Jug() == this.getId_Jug()){
 			resultado = true;
 		}
 		return resultado;
 	}
+<<<<<<< Updated upstream
 
 	@Override
 	public void mostrarDatos() {
@@ -40,4 +45,7 @@ public class Portero extends Jugador{
 		
 	}
 	
+=======
+>>>>>>> Stashed changes
 }
+

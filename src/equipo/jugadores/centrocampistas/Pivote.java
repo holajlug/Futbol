@@ -5,7 +5,8 @@ public class Pivote extends Centrocampista {
 	private int intercepciones;
 	
 	public Pivote(String nombre, int dorsal, String equipo, int pasesCompletados, int intercepciones) {
-		super(nombre, dorsal, equipo, pasesCompletados);
+		super(nombre, dorsal, equipo, pasesCompletados
+				);
 		setIntercepciones(intercepciones);
 	}
 
@@ -27,7 +28,7 @@ public class Pivote extends Centrocampista {
 		
 	@Override
 	public String toString() {
-		return "Pivote"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Asistencias: "+ getIntercepciones()+ "Pases Completados: "+ getPasesCompletados()+ "}";
+		return "Pivote"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Intercepciones: "+ getIntercepciones()+ "Pases Completados: "+ getPasesCompletados()+ "}";
 	}
 	
 	
