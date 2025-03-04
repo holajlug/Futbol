@@ -37,6 +37,5 @@ public class Portero extends Jugador{
 		}
 		return resultado;
 	}
-	
 }
 

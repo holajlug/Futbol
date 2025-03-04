@@ -20,5 +20,11 @@ public class Equipo {
 		this.jugadores = jugadores;
 	}
 	
+	public void addJugador(Jugador ju) {
+		if (ju == null) {
+			throw new IllegalArgumentException("La pizza no puede ser nula");
+		}
+		jugadores.add(ju);
+	}
 	
 }
