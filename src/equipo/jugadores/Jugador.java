@@ -11,9 +11,9 @@ public abstract class Jugador {
 	
 	public Jugador(String nombre, int dorsal, String equipo) {
 		this.id_Jug= id_Cont++;
-		this.nombre = nombre;
-		this.dorsal = dorsal;
-		this.Equipo = equipo;
+		setNombre(nombre);
+		setEquipo(equipo);
+		setDorsal(dorsal);
 	}
 
 	public int getId_Jug() {
@@ -56,10 +56,12 @@ public abstract class Jugador {
 	public static int getId_Cont() {
 		return id_Cont;
 	}
-
+	
+	public abstract void mostrarDatos();
+	
 	@Override
 	public String toString() {
-		return "";
+		return "Jugador"+ "{" + "Nombre: "+ this.nombre+ "Dorsal: "+ this.dorsal + "}";
 	}
 	
 	@Override 

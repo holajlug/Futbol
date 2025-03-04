@@ -2,7 +2,7 @@ package equipo.jugadores.defensas;
 
 import equipo.jugadores.Jugador;
 
-public class Defensa extends Jugador{
+public abstract class Defensa extends Jugador{
 	
 	private int disputasRealizadas;
 	
