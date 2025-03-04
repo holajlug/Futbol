@@ -37,15 +37,6 @@ public class Portero extends Jugador{
 		}
 		return resultado;
 	}
-<<<<<<< Updated upstream
-
-	@Override
-	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
-	}
 	
-=======
->>>>>>> Stashed changes
 }
 
