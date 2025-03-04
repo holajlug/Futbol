@@ -1,7 +1,4 @@
 package equipo.jugadores.defensas;
-
-import equipo.jugadores.Jugador;
-
 public abstract class Lateral extends Defensa{
 	private Puesto puesto;
 
@@ -19,17 +16,13 @@ public abstract class Lateral extends Defensa{
 	}
 	
 	@Override
+	public void mostrarDatos() {
+		System.out.println(this.toString());
+	}
+		
+	@Override
 	public String toString() {
-		return "";
+		return "Lateral"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Disputas: "+ getDisputasRealizadas()+ "Puesto: " +getPuesto()+ "}";
 	}
 	
-	@Override 
-	public boolean equals(Object obj) {
-		Jugador jug = (Jugador) obj;
-		boolean resultado = false;
-		if(jug.getId_Jug() == this.getId_Jug()){
-			resultado = true;
-		}
-		return resultado;
-	}
 }

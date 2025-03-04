@@ -20,13 +20,16 @@ public abstract class Defensa extends Jugador{
 	}
 	
 	@Override
+	public abstract void mostrarDatos();
+		
+	@Override
 	public String toString() {
-		return "";
+		return "Defensa"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Disputas: "+ getDisputasRealizadas()+ "}";
 	}
 	
 	@Override 
 	public boolean equals(Object obj) {
-		Jugador jug = (Jugador) obj;
+		Defensa jug = (Defensa) obj;
 		boolean resultado = false;
 		if(jug.getId_Jug() == this.getId_Jug()){
 			resultado = true;
