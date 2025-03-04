@@ -1,7 +1,5 @@
 package equipo.jugadores.defensas;
 
-import equipo.jugadores.Jugador;
-
 public abstract class Central extends Defensa{
 	
 	private int entradas;
@@ -20,17 +18,14 @@ public abstract class Central extends Defensa{
 	}
 	
 	@Override
+	public void mostrarDatos() {
+		System.out.println(this.toString());
+	}
+		
+	@Override
 	public String toString() {
-		return "";
+		return "Central"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Disputas: "+ getDisputasRealizadas()+ "Puesto: " +getEntradas()+ "}";
 	}
 	
-	@Override 
-	public boolean equals(Object obj) {
-		Jugador jug = (Jugador) obj;
-		boolean resultado = false;
-		if(jug.getId_Jug() == this.getId_Jug()){
-			resultado = true;
-		}
-		return resultado;
-	}
+	
 }
