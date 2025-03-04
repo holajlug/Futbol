@@ -33,5 +33,11 @@ public class Portero extends Jugador{
 		}
 		return resultado;
 	}
+
+	@Override
+	public void mostrarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
