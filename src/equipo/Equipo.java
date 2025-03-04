@@ -22,7 +22,7 @@ public class Equipo {
 	
 	public void addJugador(Jugador ju) {
 		if (ju == null) {
-			throw new IllegalArgumentException("La pizza no puede ser nula");
+			throw new IllegalArgumentException("La jugador no puede ser nula");
 		}
 		jugadores.add(ju);
 	}
