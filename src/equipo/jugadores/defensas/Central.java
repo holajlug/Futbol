@@ -20,8 +20,17 @@ public abstract class Central extends Defensa{
 	}
 	
 	@Override
+	public void mostrarDatos() {
+	System.out.println(this.toString());
+	}
+	
+	@Override
 	public String toString() {
-		return "";
+		return "Central"+ "{" + 
+				"Nombre: "+ getNombre()+ 
+				"Dorsal: "+ getDorsal() + 
+				"Entradas: "+ getEntradas()+
+				"}";
 	}
 	
 	@Override 
