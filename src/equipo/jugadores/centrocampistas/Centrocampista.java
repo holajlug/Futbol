@@ -22,7 +22,10 @@ public abstract class Centrocampista extends Jugador{
 		this.pasesCompletados = pasesCompletados;
 	}
 
-	public abstract void mostrarDatos();
+	@Override
+	public void mostrarDatos() {
+	System.out.println(this.toString());
+	}
 	
 	@Override
 	public String toString() {
