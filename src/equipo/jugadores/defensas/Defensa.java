@@ -24,7 +24,9 @@ public abstract class Defensa extends Jugador{
 		
 	@Override
 	public String toString() {
-		return "Defensa"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Disputas: "+ getDisputasRealizadas()+ "}";
+		return "Defensa"+ "{" + "Nombre: "+ getNombre()
+		+ "Dorsal: "+ getDorsal() 
+		+ "Disputas: "+ getDisputasRealizadas()+ "}";
 	}
 	
 	@Override 

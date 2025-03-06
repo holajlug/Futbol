@@ -22,7 +22,11 @@ public abstract class Lateral extends Defensa{
 		
 	@Override
 	public String toString() {
-		return "Lateral"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Disputas: "+ getDisputasRealizadas()+ "Puesto: " +getPuesto()+ "}";
+		return "Lateral"+ "{" 
+		+ "Nombre: "+ getNombre()
+		+ "Dorsal: "+ getDorsal() 
+		+ "Disputas: "+ getDisputasRealizadas()
+		+ "Puesto: " +getPuesto()+ "}";
 	}
 	
 }

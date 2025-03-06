@@ -24,7 +24,10 @@ public abstract class Central extends Defensa{
 		
 	@Override
 	public String toString() {
-		return "Central"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Disputas: "+ getDisputasRealizadas()+ "Puesto: " +getEntradas()+ "}";
+		return "Central"+ "{" + "Nombre: "+ getNombre()
+		+ "Dorsal: "+ getDorsal() 
+		+ "Disputas: "+ getDisputasRealizadas()
+		+ "Puesto: " +getEntradas()+ "}";
 	}
 	
 	
