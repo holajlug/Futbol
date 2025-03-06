@@ -3,8 +3,8 @@ package equipo;
 import equipo.jugadores.Jugador;
 
 public class Equipo {
-	private Jugador[] jugadores; 
-	private int numJugadores;
+	private Jugador[] jugadores;
+	int pos;
 	
 	public Equipo() {
 		this.jugadores = new Jugador[11]; 
@@ -23,15 +23,15 @@ public class Equipo {
 	}
 
 	
-	 public void addJugador(Jugador ju) { // falta que en cada posición del array solo pueda entrar una posición de jugador
+	 public void addJugador(Jugador ju, int pos) { // falta que en cada posición del array solo pueda entrar una posición de jugador
 	        if (ju == null) {
 	            throw new IllegalArgumentException("El jugador no puede ser nulo.");
 	        }
-	        if (numJugadores >= 11) {
+	        if (pos >= 11) {
 	            throw new IllegalStateException("El equipo ya tiene 11 jugadores.");
 	        }
 	        
-	        jugadores[numJugadores++] = ju; // Agrega al primer espacio disponible
+	        jugadores[pos] = ju; // Agrega al primer espacio disponible
 	    }
 	
 	public void mostrarAlineacion() {
