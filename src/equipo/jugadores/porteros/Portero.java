@@ -26,7 +26,11 @@ public class Portero extends Jugador{
 		
 	@Override
 	public String toString() {
-		return "Portero"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Paradas: "+ getParadas()+ "}";
+		return "Portero"+ "{" + 
+				"Nombre: "+ getNombre()+ 
+				"Dorsal: "+ getDorsal() + 
+				"Paradas: "+ getParadas()+
+				"}";
 	}
 	@Override 
 	public boolean equals(Object obj) {
