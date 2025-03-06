@@ -2,10 +2,10 @@ package equipo.jugadores.defensas;
 
 import equipo.jugadores.Jugador;
 
-public abstract class Lateral extends Defensa{
+public class Lateral extends Defensa{
 	private Puesto puesto;
 
-	public Lateral(String nombre, int dorsal, String equipo, int disputasRealizadas) {
+	public Lateral(String nombre, int dorsal, String equipo, int disputasRealizadas,Puesto puesto) {
 		super(nombre, dorsal, equipo, disputasRealizadas);
 	
 	}

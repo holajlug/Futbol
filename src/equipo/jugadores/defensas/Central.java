@@ -2,11 +2,11 @@ package equipo.jugadores.defensas;
 
 import equipo.jugadores.Jugador;
 
-public abstract class Central extends Defensa{
-	
+public class Central extends Defensa{
+	private Puesto puesto;
 	private int entradas;
 	
-	public Central(String nombre, int dorsal, String equipo, int disputasRealizadas,int entradas) {
+	public Central(String nombre, int dorsal, String equipo, int disputasRealizadas,int entradas,Puesto puesto) {
 		super(nombre, dorsal, equipo, disputasRealizadas);
 		setEntradas(entradas);
 	}
@@ -41,5 +41,13 @@ public abstract class Central extends Defensa{
 			resultado = true;
 		}
 		return resultado;
+	}
+
+	public Puesto getPuesto() {
+		return puesto;
+	}
+
+	public void setPuesto(Puesto puesto) {
+		this.puesto = puesto;
 	}
 }
