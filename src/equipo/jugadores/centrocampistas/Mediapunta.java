@@ -25,7 +25,7 @@ public class Mediapunta extends Centrocampista {
 		
 	@Override
 	public String toString() {
-		return "MediaPunta"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Asistencias: "+ getAsistencias()+ "Pases Completados: "+ getPasesCompletados()+ "}";
+		return "MediaPunta"+ "{" + "Nombre: "+ getNombre()+ " Dorsal: "+ getDorsal() + " Asistencias: "+ getAsistencias()+ " Pases Completados: "+ getPasesCompletados()+ "}";
 	}
 	
 }

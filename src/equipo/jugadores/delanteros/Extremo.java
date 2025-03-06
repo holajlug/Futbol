@@ -7,13 +7,13 @@ public class Extremo extends Delantero {
 	
 	public Extremo(String nombre, int dorsal, String equipo, int goles,PuestoDelantero puesto) {
 		super(nombre, dorsal, equipo, goles);
-		setPuesto(getPuesto());
+		setPuesto(puesto);
 	}
 	public String getPuesto() {
 		return puesto.toString();
 	}
-	public void setPuesto(String puesto) {
-		this.puesto = PuestoDelantero.valueOf(puesto);
+	public void setPuesto(PuestoDelantero puesto) {
+		this.puesto = puesto;
 	}
 
 	@Override
@@ -23,7 +23,7 @@ public class Extremo extends Delantero {
 		
 	@Override
 	public String toString() {
-		return "Extremo"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Goles: "+ getGoles()+ "Puesto:"+ getPuesto()+  "}";
+		return "Extremo"+ "{" + "Nombre: "+ getNombre()+ " Dorsal: "+ getDorsal() + " Goles: "+ getGoles()+ " Puesto:"+ getPuesto()+  "}";
 	}
 }
 

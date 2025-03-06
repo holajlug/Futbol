@@ -25,7 +25,7 @@ public abstract class Delantero extends Jugador {
 		
 	@Override
 	public String toString() {
-		return "Delantero"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Goles: "+ getGoles()+ "}";
+		return "Delantero"+ "{" + "Nombre: "+ getNombre()+ " Dorsal: "+ getDorsal() + " Goles: "+ getGoles()+ "}";
 	}
 	@Override 
 	public boolean equals(Object obj) {

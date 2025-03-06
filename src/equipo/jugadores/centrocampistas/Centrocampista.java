@@ -29,7 +29,7 @@ public abstract class Centrocampista extends Jugador{
 	
 	@Override
 	public String toString() {
-		return "Centrocampista"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Pases Completados: "+getPasesCompletados()+"}";
+		return "Centrocampista"+ "{" + "Nombre: "+ getNombre()+ " Dorsal: "+ getDorsal() + " Pases Completados: "+getPasesCompletados()+"}";
 	}
 	
 	@Override 

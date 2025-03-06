@@ -20,6 +20,6 @@ public class DelanteroCentro extends Delantero{
 		
 	@Override
 	public String toString() {
-		return "Delantero Centro"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Goles: "+ getGoles()+ "Goles de Penalti:"+ getGolesDePenalti()+  "}";
+		return "Delantero Centro"+ "{" + "Nombre: "+ getNombre()+ " Dorsal: "+ getDorsal() + " Goles: "+ getGoles()+ " Goles de Penalti:"+ getGolesDePenalti()+  "}";
 	}
 }

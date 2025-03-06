@@ -7,7 +7,7 @@ public class Lateral extends Defensa{
 
 	public Lateral(String nombre, int dorsal, String equipo, int disputasRealizadas,Puesto puesto) {
 		super(nombre, dorsal, equipo, disputasRealizadas);
-	
+		setPuesto(puesto);
 	}
 
 	public Puesto getPuesto() {

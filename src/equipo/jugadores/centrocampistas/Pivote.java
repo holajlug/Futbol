@@ -30,7 +30,7 @@ public class Pivote extends Centrocampista {
 		
 	@Override
 	public String toString() {
-		return "Pivote"+ "{" + "Nombre: "+ getNombre()+ "Dorsal: "+ getDorsal() + "Intercepciones: "+ getIntercepciones()+ "Pases Completados: "+ getPasesCompletados()+ "}";
+		return "Pivote"+ "{" + "Nombre: "+ getNombre()+ " Dorsal: "+ getDorsal() + " Intercepciones: "+ getIntercepciones()+ " Pases Completados: "+ getPasesCompletados()+ "}";
 	}
 
 	public Puesto getPuesto() {
